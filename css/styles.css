@@ -5,20 +5,89 @@
 }
 
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
 
+ul,
+ol {
+    margin: 0;
+    padding-left: 0;
+    
+}
+button {
+    cursor: pointer;
+    
+    
+    
+}
+address {
+    font-style: normal;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+    
+    
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+    
+    
+}
 
 body {
     font-family: 'Roboto', sans-serif;
     background-color: var(--main-title-color);
 }
-.header-link.current {
+
+    .header-link.current {
     color: var(--accent-color);
 }
-
+.header-section {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin:0 auto;
+    border-bottom: 1px solid tomato;
+}
+.header-navigation {
+    display: flex;
     
- 
+    align-items: center;
+    
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-betweens;
+}
+.header-connect {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+}
+
 
 .list {
+    
     list-style: none;
 }
 .link {
@@ -28,7 +97,13 @@ body {
 .header {
     background-color: var(--main-title-color);
 }
+.logo-studio {
+    margin-right: 215px;
+}
 .logo-web {
+        padding-top: 24px;
+        padding-bottom: 25px;
+
         font-family: 'Raleway'; sans-serif ;
         font-style: normal;
         font-weight: 700;
@@ -51,6 +126,8 @@ body {
     letter-spacing: 0.02em;
     color:#212121;
 
+    
+
 }
 
 .header-link :hover,
@@ -60,6 +137,14 @@ body {
 .header-list :hover, 
 .header-list :focus {
     color: var(--accent-color);
+    
+}
+.header-list {
+    display: flex;
+    gap: 50px;
+    padding: 0;
+    margin: 0;
+
 }
 
 
@@ -97,17 +182,29 @@ body {
         color: #757575;
 }
 .hero {
+    text-align: center;
+    display: flex;
+    justify-content: center;
     background-color: #2F303A;
+    width: 1600px;
+    height: 600px;
 }
 
 .hero-title {
+        margin-top: 0;
+        margin-bottom: 30;
+        padding-top: 200px;
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
-        text-align: center;
+        
         letter-spacing: 0.06em;
         text-transform: uppercase;
-        color: var(--main-title-color)
+        color: var(--main-title-color);
+        display: flex;
+        justify-content: center;
+
+        
 }
 .hero-btn {
         font-family:inherit;
@@ -123,25 +220,38 @@ body {
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
         cursor: pointer;
+        display: flex;
+        margin: auto;   
+        justify-content: center;
+
+
+
+
 }
+        
 .hero-btn:hover,
 .hero-btn:focus {
     background-color: #188CE8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
-
+.hero-after-list {
+    display: flex;
+    padding-right: 30px;
+}
 .hero-after-title {
-    font-weight: 700;
+        font-weight: 700;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
     
         color: var(--second-title-color);
-}
+        margin-top: 94px;
+        padding-bottom: 10px;
+}       
 .hero-after-text {
-    font-family: 'Roboto';
+        font-family: 'Roboto';
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
@@ -157,14 +267,32 @@ body {
         text-align: center;
         letter-spacing: 0.03em;
     
-        color: var(--second-title-color)
+        color: var(--second-title-color);
+        padding-bottom: 50px;
         
+}
+.about-list {
+    display: flex;
+    gap: 30px;
+}
+.team-container {
+    padding-bottom: 30px;
 }
 .team {
     background-color: #F5F4FA;
+    padding-top: 94px;
+    
+}
+.team-list {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 94px;
+    
 }
 .team-item {
     background-color: var(--main-title-color);
+    
+    
 }
 .team-title {
         font-weight: 700;
@@ -172,6 +300,7 @@ body {
         line-height: 1.16;
         text-align: center;
         letter-spacing: 0.03em
+        
         
 }
 .team-item-title {
@@ -181,6 +310,8 @@ body {
         text-align: center;
         letter-spacing: 0.03em;
         color: #212121;
+        padding-top: 30px;
+        padding-top: 10px;
 }
 .team-item-text {
     font-weight: 400;
@@ -189,6 +320,8 @@ body {
         text-align: center;
         letter-spacing: 0.03em;
         color: #757575;
+        padding-top: 10px;
+        padding-top: 30px;
 }
 
 
@@ -241,32 +374,49 @@ body {
     clip-path: inset(50%);
     margin: -1px;
 }
-
+.filters-container {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    gap: 8px;
     
-
-.filters-btn {
-    font-family: 'Roboto'; 
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.62;
-    
-    letter-spacing: 0.03em;
-    color: var(--second-title-color);
-    cursor: pointer;
-    border: none;
-    list-style: none;
-    text-decoration: none;
-    text-transform: none;
-    outline-style: none;
+}
+.filters-list {
+    display: flex;
+    justify-content: space-between;
     
 }
 
+.filters-btn {
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.62;
+    
+        letter-spacing: 0.03em;
+        color: var(--second-title-color);
+        cursor: pointer;
+        border: none;
+        list-style: none;
+        text-decoration: none;
+        text-transform: none;
+        outline-style: none;
+        justify-content: space-between;
+        margin-left: 30px;
+}
+
+
+    
+    
+
 .filters-btn :hover,
 .filters-btn :focus {
-    color: #F5F4FA;;
+    color: #F5F4FA;
     background-color: #2196F3;
- }
+}
+    
+ 
 
  .portfolio-btn {
         font-family: 'Roboto';
@@ -284,12 +434,44 @@ body {
         text-decoration: none;
         text-transform: none;
         outline-style: none;
+
+       
  
 
  
 
 
  }
+
+
+ 
+
+ .projects-container {
+     display: flex;
+     margin-left: auto;
+     margin-right: auto;
+     flex-wrap: wrap;
+ }
+
+ 
+
+ .projects-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex-wrap: wrap;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    
+ }
+
+
+
+
+
+
  .projects-item-title {
         font-family: inherit;
         font-weight: 700;
