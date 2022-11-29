@@ -11,7 +11,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/1.1.0/normalize.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
     
 </head>
@@ -22,7 +24,7 @@
         <div class="container header-container">
             
                 <nav class="header-navigation">
-        <a class="logo-web link" href="index.html">Web<span class="logo-studio">Studio</span></a>
+        <a class="header-logo-web link" href="index.html">Web<span class="logo-studio">Studio</span></a>
         
             <ul class="header-list list">
                 <li class="header-item"><a class="header-link link" href="./index.html">Студія</a></li>
@@ -31,21 +33,21 @@
             </ul>
         </nav>
 
-        <div class="header-connect">
+        
             <ul class="header-list list">
         
                 <li><a class="header-mail link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                 <li><a class="header-tel link" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
         
-        </div>
+        
         
         </div>
         </header>
 
     <main>
         <section> 
-            <div class="container filters-container ">
+            <div class="container projects-container ">
         <h1 class="visually-hidden">Наші проєкти</h1>
         <ul class="filters-list list">
             <li class="filters-btn"> <button class="portfolio-btn" type="button">Усі</button> </li>
@@ -53,68 +55,86 @@
             <li class="filters-btn"> <button class="portfolio-btn" type="button">Додатки</button>  </li>  
             <li class="filters-btn"> <button class="portfolio-btn" type="button">Дизайн</button> </li>
             <li class="filters-btn"> <button class="portfolio-btn" type="button">Маркетинг</button> </li>
-            </div>
+            
 
         </ul>
-        <div class="container projects-container">
+        
         <ul class="projects-list list">
             <li class="projects-item">
                 <img src="./images/img-8.jpg" alt="Технокряк" width="370" height="294">
+                <div class="projects-description">
                 <h2 class="projects-item-title">Технокряк</h2>
                 <p class="projects-item-text">Веб-сайт</p>
+                </div>
             
             </li>
             <li class="projects-item">
                 <img src="./images/img-9.jpg" alt="Постер" width="370" height="294">
+                <div class="projects-description">
                 <h2 class="projects-item-title">Постер New Orlean vs Golden Star</h2>
                 <p class="projects-item-text">Дизайн</p>
-                
+                </div>
             </li>
             <li class="projects-item">
                 <img src="./images/img-10.jpg" alt="Ресторан" width="370" height="294">
+                <div class="projects-description">
                 <h2 class="projects-item-title">Ресторан Seafood</h2>
                 <p class="projects-item-text">Додаток</p>
+                </div>
             </li>
             <li class="projects-item">
                 <img src="./images/img-11.jpg" alt="Проєкт навушники" width="370" height="294">
+                <div class="projects-description">
             <h2 class="projects-item-title">Проєкт Prime</h2>
             <p class="projects-item-text">Маркетинг</p>
+            </div>
+            </li>
     </li>
             <li class="projects-item">
                 <img src="./images/img-12.jpg" alt="Проєкт бокси" width="370" height="294">
+                <div class="projects-description">
             <h2 class="projects-item-title">Проєкт Boxes</h2>
             <p class="projects-item-text">Додаток</p>
+            </div>
             </li>
             <li class="projects-item">
                 <img src="./images/img-13.jpg" alt="Натхнення без меж" width="370" height="294">
+                <div class="projects-description">
             <h2 class="projects-item-title">Inspiration has no Borders</h2>
             <p class="projects-item-text">Веб-сайт</p>
+            </div>
             </li>
             <li class="projects-item">
                 <img src="./images/img-14.jpg" alt="Видання" width="370" height="294">
+                <div class="projects-description">
             <h2 class="projects-item-title">Видання Limited Edition</h2>
             <p class="projects-item-text">Дизайн</p>
-            
+            </div>
             </li>
             <li class="projects-item">
                 <img src="./images/img-15.jpg" alt="Проєкт Лаб" width="370" height="294">
+                <div class="projects-description">
             <h2 class="projects-item-title">Проєкт LAB</h2>
             <p class="projects-item-text">Маркетинг</p>
+            </div>
             </li>
             <li class="projects-item">
                 <img src="./images/img-16.jpg" alt="Розвиток бізнесу" width="370" height="294">
+                <div class="projects-description">
             <h2 class="projects-item-title">Growing Business</h2>
             <p class="projects-item-text">Додаток</p>
-            </li>
             </div>
+            </li>
+            
         </ul>
+        </div>
         </section>
     </main>
 
     <footer class="footer">
         <div class="container">
 
-            <a class="logo-web link" href="index.html">Web<span class="footer-logo-studio">Studio</span></a>
+            <a class="footer-logo-web link" href="index.html">Web<span class="footer-logo-studio">Studio</span></a>
             <address class="contacts-adress">
                 <ul class="contacts-list list">
                     <li class="contacts-item"><a class="contacts-map-link link"
