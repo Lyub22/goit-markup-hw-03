@@ -63,6 +63,8 @@ body {
 .header-section {
     
     margin:0 auto;
+
+    border-bottom: 1px solid #ECECEC;
     
 }
 .header-navigation {
@@ -240,32 +242,26 @@ body {
     padding-top: 94px;
     padding-bottom: 94px;
     
+    
+    
+    
 }
     
-
-.hero-after container {
-    
-    
-   
-    flex-basis: calc(100% -120 / 4);
-    
-    
-
-}
-    
-    
-        
-
 
 .hero-after-list {
         
-        display: flex;
-        flex-direction: row;
-        align-items: baseline;
-        justify-content: space-between;
-        flex-basis: calc(100% -120 / 4);
-        gap: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+
+    flex-basis: calc((100% - 90px) /4);
+    gap: 30px;
+        
+        
 }
+
+    
         
 .hero-after-title {
         font-weight: 700;
@@ -288,7 +284,14 @@ body {
         letter-spacing: 0.03em;
     
         color: #757575;
+
 }
+
+.about {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
 .about-title {
         font-weight: 700;
         font-size: 36px;
@@ -320,6 +323,8 @@ body {
 .team-list {
     display: flex;
     margin-top:  50px;
+
+    gap: 30px;
 }
 
 
@@ -396,8 +401,16 @@ body {
 
 .contacts-adress {
     font-style: normal;
-    margin-bottom: 9px;
+    margin-top: 28px;
+
 }
+
+.contacts-list {
+    gap: 9px;
+
+
+}
+    
 .contacts-map-link {
         font-weight: 400;
         font-size: 14px;
@@ -428,6 +441,14 @@ body {
     clip-path: inset(50%);
     margin: -1px;
 }
+
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
+}
+
+
 .projects-container {
     display: flex;
     text-align: center;
@@ -484,7 +505,7 @@ body {
     
         letter-spacing: 0.03em;
         color: var(--second-title-color);
-        background-color: var(--main-title-color);
+        
         cursor: pointer;
         border: none;
         list-style: none;
@@ -492,10 +513,14 @@ body {
         text-transform: none;
         outline-style: none;
 
-       
- 
+        background-color: #F5F4FA;
+        border-radius: 4px;
 
- 
+        
+        padding-top: 6px;
+        padding-bottom: 6px;
+        padding-right: 22px;
+        padding-left: 22px;
 
 
  }
@@ -545,6 +570,7 @@ body {
         line-height: 2;
         letter-spacing: 0.06em;
         color: var(--second-title-color);
+        margin-bottom: 4px;
  }
  .projects-item-text {
         font-family: inherit;
@@ -561,9 +587,9 @@ body {
     padding-bottom: 20px;
     padding-left: 24px;
     padding-right: 24px;
+    
+    border: 1px solid #EEEEEE;
     border-top: none;
-    border-radius: 1px solid #EEEEEE;
-     
  }
 
  
