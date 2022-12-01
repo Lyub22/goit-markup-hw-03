@@ -195,7 +195,7 @@ body {
 
 .hero-title {
         margin-top: 0;
-        margin-bottom: 30;
+        margin-bottom: 30px;
         
         font-weight: 900;
         font-size: 44px;
@@ -227,6 +227,12 @@ body {
         margin: auto;   
         justify-content: center;
 
+        margin-top: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 32px;
+        padding-left: 32px;
+
 }
 
 
@@ -244,10 +250,16 @@ body {
     
     
     
-    
+}
+
+.item {
+    width: 270px;
+
 }
     
-
+    
+        
+ 
 .hero-after-list {
         
     display: flex;
@@ -255,23 +267,17 @@ body {
     align-items: baseline;
     justify-content: space-between;
 
-    flex-basis: calc((100% - 90px) /4);
-    gap: 30px;
-        
-        
-}
-
-    
-        
-.hero-after-title {
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 1.14;
+       
         letter-spacing: 0.03em;
         text-transform: uppercase;
     
         color: var(--second-title-color);
         margin-bottom: 10px;
+
+        flex-basis: calc(100% - 90px /4);
+        gap: 30px;
+
+
         
         
 }       
@@ -288,7 +294,7 @@ body {
 }
 
 .about {
-    padding-top: 94px;
+    
     padding-bottom: 94px;
 }
 
@@ -401,15 +407,11 @@ body {
 
 .contacts-adress {
     font-style: normal;
-    margin-top: 28px;
-
+    margin-top: 20px;
+    margin-bottom: 9px;
 }
 
-.contacts-list {
-    gap: 9px;
 
-
-}
     
 .contacts-map-link {
         font-weight: 400;
@@ -426,6 +428,11 @@ body {
         line-height: 1.71;
         letter-spacing: 0.03em;
         color: rgba(255, 255, 255, 0.6);
+        
+}
+.contacts-item {
+    margin-top: 9px;
+    margin-bottom: 9px;
 }
 
     /*                           Стилі Портфоліо */
@@ -481,7 +488,8 @@ body {
         text-transform: none;
         outline-style: none;
         justify-content: space-between;
-        margin-left: 30px;
+        margin-left: 0px;
+        gap: 8px;
 }
 
 
