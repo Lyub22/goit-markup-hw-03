@@ -105,7 +105,7 @@ body {
         line-height: 1.2;
         letter-spacing: 0.03em;
         color: var(--accent-color);
-        margin-right: 215px;
+        margin-right: 93px;
 }
 
 .logo-studio {
@@ -272,7 +272,7 @@ body {
         text-transform: uppercase;
     
         color: var(--second-title-color);
-        margin-bottom: 10px;
+        
 
         flex-basis: calc(100% - 90px /4);
         gap: 30px;
@@ -290,6 +290,8 @@ body {
         letter-spacing: 0.03em;
     
         color: #757575;
+
+        margin-top: 10px;
 
 }
 
@@ -385,7 +387,7 @@ body {
     letter-spacing: 0.03em;
     color: var(--accent-color);
     margin-right: 215px;
-    margin-bottom: 20px;
+   
 
 }
 .footer-logo {
@@ -403,12 +405,13 @@ body {
 
 .footer-logo-studio {
     color: var(--main-title-color);
+    
 }
 
 .contacts-adress {
     font-style: normal;
     margin-top: 20px;
-    margin-bottom: 9px;
+    
 }
 
 
@@ -419,7 +422,8 @@ body {
         line-height: 1.71;
         letter-spacing: 0.03em;
         color: var(--main-title-color);
-        margin-bottom: 9px;
+        margin-top: 20px;
+        
 }
 
 .contacts-link {
@@ -430,10 +434,16 @@ body {
         color: rgba(255, 255, 255, 0.6);
         
 }
-.contacts-item {
+
+.contacts-item :not(:first-child) {
     margin-top: 9px;
+
+}
+
+.contacts-item :not(:last child) {
     margin-bottom: 9px;
 }
+    
 
     /*                           Стилі Портфоліо */
 .visually-hidden {
@@ -456,17 +466,12 @@ body {
 }
 
 
-.projects-container {
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-    gap: 8px;
-    
-}
+
 .filters-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 50px;
+    gap: 8px;
     
 }
 
@@ -488,11 +493,9 @@ body {
         text-transform: none;
         outline-style: none;
         justify-content: space-between;
-        margin-left: 0px;
-        gap: 8px;
+        
+
 }
-
-
     
     
 
@@ -530,19 +533,13 @@ body {
         padding-right: 22px;
         padding-left: 22px;
 
-
+        
  }
 
 
  
 
- .projects-container {
-     display: flex;
-     margin-left: auto;
-     margin-right: auto;
-     flex-wrap: wrap;
- }
-
+ 
  
 
  .projects-list {
@@ -582,8 +579,7 @@ body {
  }
  .projects-item-text {
         font-family: inherit;
-        font-style: normal;
-        font-weight: 400;
+        
         font-size: 16px;
         line-height: 1.88;
         letter-spacing: 0.03em;
